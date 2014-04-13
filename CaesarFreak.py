@@ -78,17 +78,17 @@ def crack():
 	msg = str(raw_input("[+] Enter your msg: "))		
 	msg = msg.upper()
 	for key in range(len(LETTERS)):
-	    translated = ''
+	    trans = ''
 	    for symbol in msg:
 	        if symbol in LETTERS:
 	            num = LETTERS.find(symbol) 
 	            num = num - key
 	            if num < 0:
 	                num = num + len(LETTERS)
-	            translated = translated + LETTERS[num]
+	            trans += LETTERS[num]
 	        else:
-	            translated = translated + symbol
-	    print('[*] Key ~%d: %s' % (key, translated))
+	            trans += symbol
+	    print('[*] Key ~%d: %s' % (key, trans))
 
 def main():
 	try:
