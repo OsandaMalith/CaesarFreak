@@ -1,7 +1,7 @@
-package caesar ;
+package ceasar;
 import java.util.*;
 /* Caesar Cipher programmed by Osanda Malith*/
-public class caesar {
+public class ceasar {
 	private static String LETTERS = new String("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 	private static Scanner s = new Scanner(System.in);
 	
@@ -26,10 +26,7 @@ public class caesar {
 			break;
 		default:
 			System.err.println("Enter a 1 or 2");
-			break;
-		}
-		
-	   System.out.println();
+		}		
 	}
 	
 	private static String encDec(String msg, boolean choice) {
