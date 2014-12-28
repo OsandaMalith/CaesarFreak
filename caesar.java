@@ -7,8 +7,7 @@ public class ceasar {
 	
 	public static void main(String[] args) {
 		System.out.println("[+] Enter your msg: ");
-		String msg = s.nextLine();
-	
+		String msg = s.nextLine();	
 		System.out.println("1. Encrypt\n2. Decrypt\n3. Crack\n");
 		int opt = s.nextInt();
 		boolean choice;
@@ -47,11 +46,9 @@ public class ceasar {
 					System.out.println("[!] Enter a key between 0 and 25");
 					System.exit(0);}
 			} else trans += a;
-		}
-		return trans;
+		}	return trans;
 	}
 
-	
 	private static void crack(String msg) {
 		msg = msg.toUpperCase();
 		char msg_array[] = msg.toCharArray();
@@ -64,8 +61,7 @@ public class ceasar {
 					if (num < 0) num += LETTERS.length();
 					trans += LETTERS.charAt(num);
 				} else trans += a;
-			} 
-			System.out.printf("[*] Key ~%d: %s\n", key, trans);
+			} System.out.printf("[*] Key ~%d: %s\n", key, trans);
 		}
 	}
 }
