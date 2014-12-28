@@ -40,9 +40,8 @@ public class ceasar {
 				int num = LETTERS.indexOf(a);
 				if(choice) num += key;
 				else num -= key;
-				if (num >= LETTERS.length()) {
-					num -= LETTERS.length();
-				} else if (num < 0) num += LETTERS.length();
+				if (num >= LETTERS.length()) num -= LETTERS.length();
+				else if (num < 0) num += LETTERS.length();
 				try { trans += LETTERS.charAt(num); }
 				catch (java.lang.StringIndexOutOfBoundsException e) { 
 					System.out.println("[!] Enter a key between 0 and 25");
